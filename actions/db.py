@@ -16,7 +16,7 @@ class Repo:
             EMAIL TEXT UNIQUE NOT NULL
         );
     ''')
-    print("table created")
+    conn.commit()
 
   
   @staticmethod
@@ -24,6 +24,8 @@ class Repo:
     conn.execute('''
       INSERT INTO candidates (NAME, EMPLOYEE_CODE, EMAIL) VALUES (?, ?, ?);
     ''', (name, emp_code, email))
+    conn.commit()
+
 
   @staticmethod
   def select():
@@ -46,3 +48,4 @@ class Repo:
     conn.execute('''
       DELETE FROM candidates WHERE name like ? OR employee_code like ?
     ''', (name, value,))
+    conn.commit()
