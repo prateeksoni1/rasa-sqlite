@@ -1,0 +1,162 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: say_name
+  examples: |
+    - [Prateek](PERSON)
+    - [Jasmeet](PERSON)
+    - [John](PERSON)
+    - [Kratos](PERSON)
+    - Hi, Candidate's name is [Prateek](PERSON)
+    - Hi, Candidate's name is [Jasmeet](PERSON)
+    - Hi, Candidate's name is [John](PERSON)
+    - Hi, Candidate's name is [Kratos](PERSON)
+    - Candidate's name is [Prateek](PERSON)
+    - Candidate's name is [Jasmeet](PERSON)
+    - Candidate's name is [John](PERSON)
+    - Candidate's name is [Kratos](PERSON)
+    - [prateek](PERSON)
+- intent: say_empcode
+  examples: |
+    - [0010KK](emp_code)
+    - [2132JK](emp_code)
+    - [3213IA](emp_code)
+    - [1234SJ](emp_code)
+    - The Employee Code is [0010KK](emp_code)
+    - The Employee Code is [2132JK](emp_code)
+    - The Employee Code is [3213IA](emp_code)
+    - The Employee Code is [1234SJ](emp_code)
+    - The Employee ID is [0010KK](emp_code)
+    - The Employee ID is [2132JK](emp_code)
+    - The Employee ID is [3213IA](emp_code)
+    - The Employee ID is [1234SJ](emp_code)
+    - [0100zz](emp_code)
+- intent: say_email
+  examples: |
+    - [prateeksoni300@gmail.com](email)
+    - [prateek.soni1@ibm.com](email)
+    - [jasmeet@outlook.com](email)
+    - [john@hotmail.com](email)
+    - Hi, The email is [prateeksoni300@gmail.com](email)
+    - Hi, The email is [prateek.soni1@ibm.com](email)
+    - Hi, The email is [jasmeet@outlook.com](email)
+    - Hi, The email is [john@hotmail.com](email)
+    - The email is [prateeksoni300@gmail.com](email)
+    - The email is [prateek.soni1@ibm.com](email)
+    - The email is [jasmeet@outlook.com](email)
+    - The email is [john@hotmail.com](email)
+    - You can contact them at [prateeksoni300@gmail.com](email)
+    - You can contact them at [prateek.soni1@ibm.com](email)
+    - You can contact them at [jasmeet@outlook.com](email)
+    - You can contact them at [john@hotmail.com](email)
+    - [prateek@gmail.com](email)
+    - [prateek@gmail.com](email)
+    - the email is [prateek@gmail.com](email)
+- intent: select_all
+  examples: |
+    - Show me list of all candidates
+    - Give me a list of all candidates
+    - Display all candidates
+    - Display all entries
+    - Show me all the candidates
+    - Show everyone
+    - show details
+    - show records
+- intent: add_candidate
+  examples: |
+    - I want to insert a candidate
+    - I want to add a candidate
+    - Please insert a candidate
+    - Please add a candidate
+    - I want to load a candidate
+    - Please load a candidate in database
+    - add candidate
+- intent: delete_candidate
+  examples: |
+    - Delete [Prateek](PERSON) from records
+    - Drop [Jasmeet](PERSON)
+    - Remove [Paras](PERSON)
+    - remove [jasmeet](PERSON) from records
+    - remove [prateek](PERSON) from records
